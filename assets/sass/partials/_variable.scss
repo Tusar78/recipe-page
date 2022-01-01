@@ -1,0 +1,35 @@
+// Import "Playfair" & "Montserrat" from fonts.google.com
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap");
+
+$regular: 400;
+$medium-bold: 500;
+$bold: 700;
+
+// Colors & typography
+$primary-color: #333;
+$light-color: #bdbdbd;
+$black: #000;
+
+// Font & Typography
+$heading-font: "Playfair Display", serif;
+$body-font: "Montserrat", sans-serif;
+
+:root {
+  --big-font-size: 3rem;
+  --medium-font-size: 1.5rem;
+  --sub-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --tiny-font-size: 0.625rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  :root {
+    --big-font-size: 1.5rem;
+    --medium-font-size: 1.125rem;
+    --sub-font-size: 1rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.625rem;
+    --tiny-font-size: 0.5rem;
+  }
+}
