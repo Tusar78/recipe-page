@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap");
+:root {
+  --big-font-size: 3rem;
+  --medium-font-size: 1.5rem;
+  --sub-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --tiny-font-size: 0.625rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  :root {
+    --big-font-size: 1.5rem;
+    --medium-font-size: 1.125rem;
+    --sub-font-size: 1rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.625rem;
+    --tiny-font-size: 0.5rem;
+  }
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: #f8f8f8;
+  color: #0a0b13;
+}
+
+h1,
+h2,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.l-header {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: var(--big-font-size);
+  color: #0a0b13;
+  margin-bottom: 0.675rem;
+}
+
+.header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__text img {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
+.header__text p {
+  font-size: var(--normal-font-size);
+}
