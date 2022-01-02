@@ -21,7 +21,7 @@ $body-font: "Montserrat", sans-serif;
   --sub-font-size: 1.125rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
-  --tiny-font-size: 0.625rem;
+  --tiny-font-size: 0.75rem;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -30,7 +30,7 @@ $body-font: "Montserrat", sans-serif;
     --medium-font-size: 1.125rem;
     --sub-font-size: 1rem;
     --normal-font-size: 0.875rem;
-    --small-font-size: 0.625rem;
-    --tiny-font-size: 0.5rem;
+    --small-font-size: 0.75rem;
+    --tiny-font-size: 0.625rem;
   }
 }
