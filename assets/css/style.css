@@ -319,6 +319,10 @@ img {
   }
   .instruction li {
     margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .instruction__list {
+    width: 660px;
   }
   .footer {
     padding-top: 5rem;
