@@ -67,6 +67,9 @@ img {
   width: calc(100% - 1rem);
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .l-header {
@@ -152,6 +155,7 @@ img {
 
 .ingredients__serv {
   width: 100%;
+  background: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,9 +173,13 @@ img {
   margin: 0 0.75rem 1rem 0;
 }
 
+.ingredients__prepare .ingredients__icon {
+  width: 24px;
+  margin-right: 0.5rem;
+}
+
 .ingredients__prepare .prepare__icon {
   font-size: 24px;
-  margin-right: 0.5rem;
   color: #4f4f4f;
 }
 
@@ -253,4 +261,65 @@ img {
 
 .footer p a {
   color: violet;
+}
+
+@media screen and (min-width: 768.98px) {
+  .header__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__text p {
+    width: 640px;
+  }
+  .img-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ingredients {
+    margin-right: auto;
+    margin-left: auto;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    row-gap: 0;
+  }
+  .ingredients aside {
+    grid-area: auto;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .ingredients__serv {
+    width: 216px;
+    height: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-radius: 0.75rem;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding-left: 3rem;
+  }
+  .ingredients__prepare {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .ingredients__prepare:last-child {
+    margin-bottom: 0;
+  }
+  .instruction {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .instruction li {
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding-top: 5rem;
+  }
 }
